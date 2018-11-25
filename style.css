@@ -1,0 +1,15 @@
+.container{
+    margin: 20px 5%;
+}
+.display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.display h3{
+    font-size: 23px;
+    color: black;
+}
+.display h3:hover{
+    color: blueviolet;
+}

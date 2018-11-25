@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Табло аэропорта</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="container">
+    <header>
+        
+    </header>
+    <main>
+        <section class="display">
+            <article>
+                <h3 id="out">Вылетающие рейсы</h3>
+                <div id="out_1"></div>
+                <script src="ajax_get.js"></script>
+            </article>
+            <h3 id="come">Прилетающие рейсы</h3>
+            <h3 id="delay">Задержанные рейсы</h3>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
