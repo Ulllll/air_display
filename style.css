@@ -6,6 +6,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.menu{
+    justify-content: space-around;
+}
 .menu li{
     font-size: 23px;
     color: black;
@@ -13,4 +16,27 @@
 }
 .menu li:hover{
     color: blueviolet;
+    cursor: pointer;
+}
+#go article{
+    padding-left: 20px;
+}
+#go article p{
+    font-size: 20px;
+    width: 20%;
+}
+#go{
+    box-shadow: 10px 10px 40px 6px rgba(0,0,0,0.34);
+}
+#go article:hover{
+    cursor: pointer;
+    box-shadow: 4px 2px 60px 22px rgba(0,0,0,0.28);
+}
+
+#table_name p{
+    font-size: 14px !important;
+}
+#table_name:hover{
+    cursor: default !important;
+    box-shadow: none !important;
 }
