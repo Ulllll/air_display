@@ -64,6 +64,7 @@ $.ajax({
     
           url: `${baseUrl}apikey=${apikey}&station=s9600213&transport_type=plane&event=arrival&limit=2200`,
           success: function(data) { 
+
             t1=data.pagination.limit
             t2=data.pagination.total
             if(t1>=t2){
@@ -105,10 +106,40 @@ $.ajax({
           }
         })
 })
+$(document).on('click', 'button', function(){
+$('#go').remove()
+$('main').append(`<section id=\'go\'></section>`)
+val=$('input').val()
+val = val.toUpperCase()
+console.log(val)
+$.ajax({
+        
+          url: `${baseUrl}apikey=${apikey}&station=s9600213&transport_type=plane&limit=5000`,
+          success: function(data) { 
+              t1=data.pagination.limit
+            t2=data.pagination.total
+            if(t1>=t2){
+                total=t2
+                    }
+              else total=t1
+            for(i=0;i<total;i++)
+            {   
+                
+                if(data.schedule[i].thread.number==val){
+                    console.log('yes')
+                    company=data.schedule[i].thread.carrier.title,
+                    fromTo=data.schedule[i].thread.title,
+                    time=data.schedule[i].arrival
+                    number=data.schedule[i].thread.number
+                    $(`#goArticle${i}`).append(`<p>${fromTo}</p>`)
+                    $(`#goArticle${i}`).append(`<p>${time}</p>`)
+                    $(`#goArticle${i}`).append(`<p>${company}</p>`)
+                    $(`#goArticle${i}`).append(`<p>${number}</p>`)
+                
+                }
+            }
+            
+            }
+        })
 
-   $(document).ajaxStart(function(){
-          $("#loadingDiv").css("display","block");
-        });
-        $(document).ajaxComplete(function(){
-          $("#loadingDiv").css("display","none");
-        });
+})
