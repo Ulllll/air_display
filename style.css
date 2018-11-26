@@ -1,7 +1,11 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
 .container{
     margin: 20px 5%;
 }
-.menu, #go article{
+.menu, #go article, header,.footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -24,19 +28,61 @@
 #go article p{
     font-size: 20px;
     width: 20%;
+    padding: 10px;
 }
 #go{
     box-shadow: 10px 10px 40px 6px rgba(0,0,0,0.34);
+    margin-top: 30px;
 }
 #go article:hover{
     cursor: pointer;
-    box-shadow: 4px 2px 60px 22px rgba(0,0,0,0.28);
+    box-shadow: 4px 2px 60px -1px rgba(0,0,0,0.28);
 }
-
+.display{
+    margin-top: 35px;
+}
 #table_name p{
     font-size: 14px !important;
 }
 #table_name:hover{
     cursor: default !important;
     box-shadow: none !important;
+}
+.active{
+    color: blueviolet;
+    border-bottom: 1px solid blueviolet;
+}
+.start p{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 14%;
+    padding-bottom: 14%;
+}
+header div p{
+    font-size: 20px;
+}
+.info_display{
+    background-image: url(img/back5.jpg);
+    background-size: 100%;
+    height: 300px;
+}
+.contact{
+    padding-top: 75px;
+}
+h1{
+    font-size:84px;
+    text-align: center;
+    color: white;
+    padding-top: 14%;
+    padding-bottom: 14%;
+}
+header div img, footer div img{
+    width: 250px;
+}
+footer{
+    margin-top: 35px;
+}
+.name{
+    font-size: 44px;
+    padding-top: 75px;
 }

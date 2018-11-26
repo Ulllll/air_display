@@ -9,12 +9,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="ajax/ajax_get.js"></script>
+    
 </head>
 <body class="container">
-    <header>
-        
-    </header>
+    <header><script src="header.js"></script></header>
     <main>
+       <section class="info_display">
+           <h1>Табло рейсов</h1>
+       </section>
         <section class="display">
                <ul class="menu">
                    <li><h3 id="out">Вылетающие рейсы</h3></li>
@@ -22,10 +25,11 @@
                    <li><h3 id="delay">Задержанные рейсы</h3></li>
                </ul>
         </section>
-        <section id="go">
-            <script src="ajax/ajax_get.js"></script>
+        <section id="go" class="start">
+            <p>Здесь будет расписание рейсов</p>
         </section>
     </main>
-    <footer></footer>
-</body>
+    <footer><script src="footer.js"></script>
+</footer>
+</body> 
 </html>
