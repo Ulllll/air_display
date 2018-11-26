@@ -1,15 +1,16 @@
 .container{
     margin: 20px 5%;
 }
-.display{
+.menu, #go article{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.display h3{
+.menu li{
     font-size: 23px;
     color: black;
+    list-style-type: none;
 }
-.display h3:hover{
+.menu li:hover{
     color: blueviolet;
 }
