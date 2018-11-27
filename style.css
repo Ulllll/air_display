@@ -74,6 +74,7 @@ header div p{
     background-image: url(img/back5.jpg);
     background-size: 100%;
     height: 300px;
+    margin-bottom: 20px;
 }
 .contact{
     padding-top: 75px;
@@ -114,4 +115,14 @@ button{
     padding: 15px;
     color: white;
     background-color: blueviolet;
+}
+#copy{
+    font-size: 27px;
+    text-align: center;
+}
+#copy a{
+    text-decoration: none;
+}
+#copy a:hover{
+    color: orange;
 }
