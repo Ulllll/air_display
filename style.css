@@ -6,12 +6,18 @@
     margin: 20px 5%;
 }
 .menu, #go article, header,.footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .menu{
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .menu li{
     font-size: 23px;
@@ -31,12 +37,14 @@
     padding: 10px;
 }
 #go{
-    box-shadow: 10px 10px 40px 6px rgba(0,0,0,0.34);
+    -webkit-box-shadow: 10px 10px 40px 6px rgba(0,0,0,0.34);
+            box-shadow: 10px 10px 40px 6px rgba(0,0,0,0.34);
     margin-top: 30px;
 }
 #go article:hover{
     cursor: pointer;
-    box-shadow: 4px 2px 60px -1px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 4px 2px 60px -1px rgba(0,0,0,0.28);
+            box-shadow: 4px 2px 60px -1px rgba(0,0,0,0.28);
 }
 .display{
     margin-top: 35px;
@@ -46,7 +54,8 @@
 }
 #table_name:hover{
     cursor: default !important;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
 }
 .active{
     color: blueviolet;
@@ -81,6 +90,14 @@ header div img, footer div img{
 }
 footer{
     margin-top: 35px;
+}
+.footer div a{
+    display: block;
+}
+.footer div a :hover{
+    -webkit-transform: rotate(700deg);
+        -ms-transform: rotate(700deg);
+            transform: rotate(700deg)
 }
 .name{
     font-size: 44px;
